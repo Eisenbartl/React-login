@@ -7,6 +7,9 @@ const Navigation = props => (
             <li>
                 <a href="/login">Log in</a>
             </li>
+            <li>
+                <a href="/register">register</a>
+            </li>
         </ul>
     </div>
 )

@@ -14,4 +14,18 @@ app.get('/*', function(req, res) {
     })
 });
 
+app.post('/login', (req, res) => {
+  const email = req.body.email;
+
+  console.log(req.body);
+  res.end();
+});
+
+app.post('/register', (req, res) => {
+  const email = req.body.email;
+
+  console.log(req.body.regInfo.registerEmail);
+  res.end();
+});
+
 app.listen(PORT, () => console.log('Server running on port: ', PORT));
